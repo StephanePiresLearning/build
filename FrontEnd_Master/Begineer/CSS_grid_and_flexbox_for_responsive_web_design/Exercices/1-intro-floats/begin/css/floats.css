@@ -1,0 +1,92 @@
+/* Border box declaration 
+https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+  box-sizing: border-box;
+}
+/* inherit border-box on all elements in the universe and before and after
+ */
+*, 
+*:before, 
+*:after {
+  box-sizing: inherit;
+}
+
+*{
+	background-color: blue;
+}
+
+body {
+	font-family: Arial, Geneva, sans-serif;
+}
+a {
+	color: #2772B0;
+}
+.wrapper {
+	width: 97%;
+	max-width: 1200px;
+	margin: 0 auto;
+	float: none;
+	background-color: #fff;
+}
+
+[class*="row-"]::after {
+	content:'';
+	display: table;
+	clear: both;
+}
+
+.col-1 {
+	float: left;
+	margin-left: 4%;
+	width: 20%;
+	background-color: blueviolet;
+}
+
+.col-2 {
+	float: left;
+	margin-left: 4%;
+	width: 44%;
+	background-color: bisque;
+}
+
+.col-3-a {
+	float: left;
+	margin-left: 4%;
+	width: 20%;
+	background-color: greenyellow;
+}
+
+.col-3-b {
+	float: left;
+	margin-left: 4%;
+	width: 68%;
+	background-color: greenyellow;
+}
+
+.col-4 {
+	float: left;
+	margin-left: 4%;
+	width: 92%;
+	background-color: blue;
+}
+
+div img {
+	width: 100%;
+	max-width: 225px; 
+}
+
+/* grid system -- mobile first! */
+
+
+/* Mobile Landscape Screen Sizes */
+@media only screen and (min-width: 480px)  {
+	*{
+		background-color: brown;
+	}
+}
+/* Desktop screen Sizes */
+@media only screen and (min-width: 768px) {
+	*{
+		background-color: white;
+	}
+}

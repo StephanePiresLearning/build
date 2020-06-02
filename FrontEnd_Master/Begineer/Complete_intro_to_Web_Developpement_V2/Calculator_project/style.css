@@ -1,0 +1,152 @@
+h1 {
+    color: blueviolet
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.calculator {
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px;
+  grid-template-rows: 40px 50px 50px 50px 50px 50px;
+  grid-template-areas: 
+    "screen screen screen screen"
+    "clear clear back divide"
+    "seven eight nine times"
+    "four five six minus"
+    "one two three plus"
+    "zero zero zero equal"
+}
+
+.screen {
+    grid-area: screen;
+    background-color: black;
+    justify-self: center;
+    color: white;
+    justify-self: stretch;
+    align-self: stretch;
+    text-align: right;
+    line-height: 40px;
+}
+
+.digit{
+    background-color: #D8D9DB;
+    border: solid 1px black;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+}
+
+.digit:hover{
+    background-color: #ebebeb;
+
+}
+
+.operande{
+    background-color: #DF974C;
+    border: solid 1px black;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+}
+
+.operande:hover{
+    background-color: #f0ab66;
+}
+
+.clear {
+    grid-area: clear;
+    background-color: #D8D9DB;
+    border: solid 1px black;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+}
+
+.clear:hover{
+    background-color: #ebebeb;
+}
+
+.back {
+    grid-area: back;
+    background-color: #D8D9DB;
+    border: solid 1px black;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+}
+
+.back:hover {
+    background-color: #ebebeb;
+}
+
+.divide {
+    grid-area: divide;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.nine {
+    grid-area: nine;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+.three {
+    grid-area: three;
+}
+
+.two {
+    grid-area: two;
+}
+
+.one {
+    grid-area: one;
+}
+
+.times{
+    grid-area: times;
+}
+
+.minus{
+    grid-area: minus;
+}
+
+.plus {
+    grid-area: plus;
+}
+
+.zero {
+    grid-area: zero;
+} 
+
+.equal {
+    grid-area: equal;
+    background-color: #DF974C;
+    border: solid 1px black;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+}
+
+.equal:hover {
+    background-color: #f0ab66;
+}
